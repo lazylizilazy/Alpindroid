@@ -2,11 +2,14 @@
 
 [English](README.md) | [简体中文](README.zh.md)  
 
-这是一个专为 H618 硬件（WalnutPi ZeroW / 核桃派 ZeroW）打造的 Linux 系统，它结合了官方 Debian 12 的引导链（boot chain）与 Alpine Linux 3.23 的用户空间，旨在支持 Waydroid（Android 容器）。
-它修复了核桃派官方 Debian 12 镜像中存在的 GPU 和供电缺陷，并将 1.1 GB 的 Debian 根文件系统（rootfs）替换为约 90 MB 的 Alpine 根文件系统。
-**无需编译 AOSP。** 项目的目标是构建一个轻量级的 Alpine 宿主机，并在其上运行 Android。
-自 **v0.22** 版本起，该目标已达成：Android (LineageOS 20) 在 LXC 容器中作为主 UI 运行，通过与 Weston 宿主机相同的 Panfrost/Mesa 图形栈进行渲染，并且无需任何网络连接即可启动。
-Android 系统的完整功能将逐步实现。
+这是一个专为 H618 硬件（WalnutPi ZeroW / 核桃派 ZeroW）打造的 Linux 系统，它结合了官方 Debian 12 的引导链（boot chain）与 Alpine Linux 3.23 的用户空间，旨在支持 Waydroid（Android 容器）。  
+
+它修复了核桃派官方 Debian 12 镜像中存在的 GPU 和供电缺陷，并将 1.1 GB 的 Debian 根文件系统（rootfs）替换为约 90 MB 的 Alpine 根文件系统。  
+
+**无需编译 AOSP。** 项目的目标是构建一个轻量级的 Alpine 宿主机，并在其上运行 Android。  
+
+自 **v0.22** 版本起，该目标已达成：Android (LineageOS 20) 在 LXC 容器中作为主 UI 运行，通过与 Weston 宿主机相同的 Panfrost/Mesa 图形栈进行渲染，并且无需任何网络连接即可启动。  
+Android 系统的完整功能将逐步实现。  
 
 ---
 ## 状态：v0.18（稳定基线）
